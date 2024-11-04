@@ -1,0 +1,69 @@
+/* Container styling */
+.todo-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .todo-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and button styling */
+  .new-task-input {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .add-task-button {
+    padding: 8px 16px;
+  }
+  
+  /* Filter button styling */
+  .filter-button {
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+  
+  /* Task list styling */
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Checkbox styling */
+  .task-checkbox {
+    margin-right: 10px;
+  }
+  
+  /* Task name styling */
+  .task-name {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  /* Completed task styling */
+  .completed-task {
+    text-decoration: line-through;
+  }
+  
+  /* Edit input styling */
+  .edit-task-input {
+    padding: 8px;
+    flex: 1;
+  }
+  
+  /* Delete button styling */
+  .delete-task-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+  }
+  

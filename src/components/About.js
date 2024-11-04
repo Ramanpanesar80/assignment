@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './About.css';
 
 const About = () => {
   const [funFact, setFunFact] = useState('');
@@ -17,7 +18,7 @@ const About = () => {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div className="about-container">
       <h1>About Our App</h1>
       <p>
         Welcome to our app! This application is designed to help users manage their tasks efficiently and effectively.
@@ -34,10 +35,10 @@ const About = () => {
         Our app aims to improve productivity by providing a simple and intuitive interface for task management. Whether you are working individually or as part of a team, our app helps you stay organized and on top of your tasks.
       </p>
       <h2>Fun Fact</h2>
-      <button onClick={getRandomFact} style={{ padding: '10px', cursor: 'pointer' }}>
+      <button onClick={getRandomFact} className="fun-fact-button">
         Show Fun Fact
       </button>
-      {funFact && <p style={{ marginTop: '10px', fontStyle: 'italic' }}>{funFact}</p>}
+      {funFact && <p className="fun-fact-text">{funFact}</p>}
     </div>
   );
 };
