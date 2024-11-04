@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './home.css';
 
-function Home() {
+function Index() {
   const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 100) + 1);
   const [guess, setGuess] = useState('');
   const [feedback, setFeedback] = useState('');
@@ -38,7 +38,7 @@ function Home() {
     <div className="container">
       <h1>Welcome to the Mystery Number Guessing Game!</h1>
       <div className="banner">
-        <img src="banner.jpg" alt="Banner" />
+        <img src="random.webp" alt="Banner" />
       </div>
       <div className="game">
         <p>Guess a number between 1 and 100:</p>
@@ -59,4 +59,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Index;
